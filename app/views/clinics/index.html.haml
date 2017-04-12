@@ -1,0 +1,21 @@
+%h1 Stuff That is True!
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th
+      %th
+      %th
+
+  %tbody
+    - @clinics.each do |clinic|
+      %tr
+        %td= clinic.title
+        %td= link_to 'Show', clinic
+        %td= link_to 'Edit', edit_clinic_path(clinic)
+        %td= link_to 'Destroy', clinic, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New True Thing', new_clinic_path
