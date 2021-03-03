@@ -1,10 +1,7 @@
-on:
-  issue_comment:
-    types: [created]
+on: [push, issue_comment]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.comment.body, '/hello')
     name: A job to say hello
     steps:
     - name: Hello world action step
