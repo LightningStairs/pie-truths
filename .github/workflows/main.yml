@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: LightningStairs/comment_action@v1
+      uses: LightningStairs/comment_action@v2
       with:
         who-to-greet: '@${{ github.actor }}, esteemed developer'
     # Use the output from the `hello` step
