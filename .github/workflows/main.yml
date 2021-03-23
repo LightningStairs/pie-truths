@@ -7,6 +7,6 @@ jobs:
     if: startsWith(github.event.comment.body, '/hello')
 
     steps:
-      - uses: LightningStairs/comment_action@v4
+      - uses: LightningStairs/comment_action@v5
         env:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
